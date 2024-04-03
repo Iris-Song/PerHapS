@@ -28,7 +28,9 @@ When and why does your approach fail?
 ## References & Resource
 + [Efficient Algorithms for Mining Outliers from Large Data Sets. Ramaswamy et al., SIGMOD 2000.](https://dl.acm.org/doi/abs/10.1145/342009.335437) 
 + [Cleaning disguised missing data: a heuristic approach. Ming Hua, Jian Pei. KDD 2007: 950-958](https://web.archive.org/web/20070824063404id_/http:/www.cs.sfu.ca/~jpei/publications/dmv-kdd07.pdf)
-+ [pyOD](https://github.com/yzhao062/pyod)
++ pyOD
+  + [github](https://github.com/yzhao062/pyod)
+  + [doc](https://pyod.readthedocs.io/en/latest/)
 
 ## Team
 <a href="https://github.com/Iris-Song/PerHapS/graphs/contributors">
