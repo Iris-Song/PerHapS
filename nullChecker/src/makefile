@@ -1,26 +1,19 @@
-CC = g++ 			#C compiler
-CXXFLAGS = -fPIC -Wextra -O2 -g -std=c++11			# C flags
-LDFLAGS = -shared  							# linking flags
-RM = rm -f  			# rm command
-TARGET_LIB = libFahes.so # target lib
+CC = g++
+DEBUG = -O3
+CFLAGS = -fPIC -std=c++11 $(DEBUG) -c
+LFLAGS = -shared -std=c++11 $(DEBUG)
 
-# SRCS = hello_world.cpp src1.c src2.c # source files
+RM = rm -f  			# rm command
+TARGET_LIB = FAHES.so 	# Shared object target
 SRCS = $(shell ls *.cpp)
 OBJS = $(SRCS:.cpp=.o)
 
-.PHONY: all
-all: ${TARGET_LIB}
+all: $(TARGET_LIB)
 
 $(TARGET_LIB): $(OBJS)
-	$(CC) ${LDFLAGS} -o $@ $^
+	$(CC) $(LFLAGS) -o $(TARGET_LIB) $(OBJS)
 
-# $(SRCS:.cpp=.d):%.d:%.cpp
-# 	$(CC) $(CXXFLAGS) -MM $< >$@
-
--include $(SRCS:.cpp=.d)
-
-.PHONY: clean
 clean:
-	-${RM} ${TARGET_LIB} ${OBJS} $(SRCS:.cpp=.d)
+	-$(RM) $(TARGET_LIB) $(OBJS)
 rmo:
-	-${RM} $(SRCS:.cpp=.o) $(SRCS:.cpp=.d)
+	-$(RM) $(OBJS)
