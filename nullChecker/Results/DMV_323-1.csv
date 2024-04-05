@@ -1,0 +1,4 @@
+Table Name,Attribute Name,DMV,Frequency,Detecting Tool
+323-1,DEATHS,x,15,SYN
+323-1,AADR,*,90,SYN
+323-1,AADR,x,15,SYN
