@@ -21,9 +21,9 @@ https://pypi.org/project/datamart-profiler
 https://github.com/soniacq/DataProfileVis
 
 You should also try to answer the following questions:
-Are there patterns for how NULL values/outliers are represented?
-What is the precision and recall of the techniques you designed/implemented?
-When and why does your approach fail?
++ Are there patterns for how NULL values/outliers are represented?
++ What is the precision and recall of the techniques you designed/implemented?
++ When and why does your approach fail?
 
 ## References & Resource
 + [Efficient Algorithms for Mining Outliers from Large Data Sets. Ramaswamy et al., SIGMOD 2000.](https://dl.acm.org/doi/abs/10.1145/342009.335437) 
@@ -36,3 +36,8 @@ When and why does your approach fail?
 <a href="https://github.com/Iris-Song/PerHapS/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Iris-Song/PerHapS&columns=5&max=10"/>
 </a>
+
+## Result Output
+column_name; value; frequency; category
+
+![](./img/result_example.png)

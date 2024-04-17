@@ -1,0 +1,8 @@
+Table Name,Attribute Name,DMV,Frequency,Detecting Tool
+health,CONCENTRATION,-1,3747,Rand
+health,MANUFACTURER,UNKNOWN OR NOT STATED,4816,Rand
+health,PRODUCT_TYPE,Dietary Supplement/Medications/Remedy,1588,SYN
+health,MANUFACTURER,MOHO?,3,SYN
+health,MANUFACTURER,OOO PK "ARIKON-PRO",10,SYN
+health,MADE_IN_COUNTRY,CROATIA (local name: Hrvatska),9,SYN
+health,CONCENTRATION,220000,3,OD

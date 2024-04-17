@@ -1,0 +1,8 @@
+Table Name,Attribute Name,DMV,Frequency,Detecting Tool
+film_permits,CommunityBoard(s),1,1058,Rand
+film_permits,PolicePrecinct(s),94,666,Rand
+film_permits,ZipCode(s),11222,620,Rand
+film_permits,Category,WEB,231,SYN
+film_permits,SubCategoryName,Industrial/Corporate,15,SYN
+film_permits,SubCategoryName,Made for TV/mini-series,7,SYN
+film_permits,SubCategoryName,Special/Awards Show,22,SYN

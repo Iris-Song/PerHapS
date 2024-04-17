@@ -1,8 +1,0 @@
-Table Name,Attribute Name,DMV,Frequency,Detecting Tool
-vaccinations,Facility Name,Walgreens Drug Store,89,Rand
-vaccinations,City,Manhattan,91,Rand
-vaccinations,Borough,Brooklyn,106,Rand
-vaccinations,Website,https://www.walgreens.com/,89,Rand
-vaccinations,More Information,Call location for hours,787,Rand
-vaccinations,Borough,STATEN ISLAND,31,SYN
-vaccinations,Borough,Staten Island,21,SYN
