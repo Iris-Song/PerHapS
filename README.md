@@ -31,6 +31,7 @@ You should also try to answer the following questions:
 + pyOD
   + [github](https://github.com/yzhao062/pyod)
   + [doc](https://pyod.readthedocs.io/en/latest/)
++ [FAHES](https://github.com/daqcri/FAHES_Code)
 
 ## Team
 <a href="https://github.com/Iris-Song/PerHapS/graphs/contributors">
