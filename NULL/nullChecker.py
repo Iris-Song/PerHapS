@@ -86,7 +86,6 @@ def nullChecker(path):
     final_null  = pd.concat([fahes_DMV, regular_null], ignore_index=True).drop_duplicates(keep='first')
     print( regular_null )
     output_df = replace_missing_values(df,final_null)
-    output_df.to_csv('output1.csv', index=False)
 
     return df, final_null
 
