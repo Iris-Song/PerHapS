@@ -189,9 +189,9 @@ void DV_Detector::check_non_conforming_patterns(TableProfile & TP,
 				vector<map<string, long> > & M,
     			std::vector<sus_disguised> & sus_dis_values){
 	// cerr << "Start : detect_single_char_strings\n"; 
-	detect_single_char_strings(TP, sus_dis_values);
+	//detect_single_char_strings(TP, sus_dis_values);
 	// cerr << "Done : detect_single_char_strings\n"; 
-	positive_negative_inconsistency(TP, sus_dis_values);
+	//positive_negative_inconsistency(TP, sus_dis_values);
 	// cerr << "Done : positive_negative_inconsistency\n";
 	check_repeated_substrings(TP, M, sus_dis_values);
 	// cerr << "Done : check_repeated_patterns\n";

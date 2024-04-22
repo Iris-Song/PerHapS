@@ -6,6 +6,9 @@
 
 #include "common.h"
 #include <stdlib.h>
+#include <string>
+#include <cctype>  
+#include <cmath> 
 
 
 bool equals(const vector<string> & V1, const vector<string> & V2, const long & idx){
@@ -221,7 +224,32 @@ long check_data_type(const string& s ){
 //     return std_dev;
 // }
 // ========================================================================
+
+
+bool has_high_numeric_content(const std::string& str) {
+    int digit_count = 0;
+    for (char c : str) {
+        if (std::isdigit(c)) {
+            digit_count++;
+        }
+    }
+    return (digit_count >= 0.8 * str.length());
+}
+
+std::string filter_non_digits(const std::string& str) {
+    std::string result;
+    for (char c : str) {
+        if (std::isdigit(c)) {
+            result.push_back(c);
+        }
+    }
+    return result;
+}
+
 double check_str_repetition(const string str){
+    if (has_high_numeric_content(str)) {
+        std::string str = filter_non_digits(str); 
+    }
     int min_dist_idx, min_dist;
     double s = 0, sqs = 0, count = 0, std_dev;
     if (str.length() < 5)
@@ -234,9 +262,6 @@ double check_str_repetition(const string str){
             min_dist_idx = j;
         }
     }
-    // if ((!isNumber(str)) && (min_dist_idx > 1))
-    if (min_dist_idx > 1)
-        return 1.0;
 
     if (min_dist_idx > (int)(str.length()/2))
         for (int k = 0; k < (int)str.length() - 1; k++){
