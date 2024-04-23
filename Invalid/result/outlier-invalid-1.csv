@@ -1,0 +1,70 @@
+column_name,value,frequency,category
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,543120.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,684720.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,636240.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,504240.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,616560.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,IForest,KNN_largest"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,855360.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,680400.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,941520.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,507840.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,769440.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,711840.0,1,"Outlier-KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,609120.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,IForest,KNN_largest"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,937680.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,618240.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,807600.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,1095840.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,545760.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,609360.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,IForest,KNN_largest"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,798240.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,860880.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,516960.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,530880.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,714000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,KNN_largest,HBOS,ECOD,IForest,ABOD"
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,481200.0,1,Outlier-ABOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,472560.0,1,Outlier-ABOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,484560.0,1,Outlier-ABOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,197.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,182.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,226.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,214.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,208.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,211.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,181.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,216.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,193.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,190.0,1,Outlier-ECOD
+Concentration SARS-CoV-2 gene target (N1 Copies/L) ,30.0,1,"Outlier-ECOD,Feature Bagging"
+Per capita SARS-CoV-2 load (N1 copies per day per population),316000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),300000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),341000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),258000000.0,1,"Outlier-KNN_mean,KNN_largest,KNN_median"
+Per capita SARS-CoV-2 load (N1 copies per day per population),562000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),284000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),370000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),309000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),312000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),741000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),274000000.0,1,"Outlier-KNN_mean,IForest,KNN_largest,KNN_median"
+Per capita SARS-CoV-2 load (N1 copies per day per population),286000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),362000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),264000000.0,1,"Outlier-KNN_mean,IForest,KNN_largest,KNN_median"
+Per capita SARS-CoV-2 load (N1 copies per day per population),350000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),457000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),398000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),327000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),320000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),409000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,HBOS,ECOD,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),277000000.0,2,"Outlier-KNN_mean,IForest,KNN_largest,KNN_median"
+Per capita SARS-CoV-2 load (N1 copies per day per population),279000000.0,1,"Outlier-Feature Bagging,KNN_median,KNN_mean,IForest,KNN_largest"
+Per capita SARS-CoV-2 load (N1 copies per day per population),257000000.0,1,Outlier-IForest
+Per capita SARS-CoV-2 load (N1 copies per day per population),69000.0,1,"Outlier-ECOD,Feature Bagging"
+Per capita SARS-CoV-2 load (N1 copies per day per population),81400.0,1,Outlier-ECOD
+Per capita SARS-CoV-2 load (N1 copies per day per population),86500.0,1,Outlier-ECOD
+Per capita SARS-CoV-2 load (N1 copies per day per population),95800.0,1,Outlier-ECOD
+Per capita SARS-CoV-2 load (N1 copies per day per population),83300.0,1,Outlier-ECOD
+Per capita SARS-CoV-2 load (N1 copies per day per population),91700.0,1,Outlier-ECOD
+Per capita SARS-CoV-2 load (N1 copies per day per population),97300.0,1,Outlier-ECOD
+Per capita SARS-CoV-2 load (N1 copies per day per population),0.0,3,"Outlier-ECOD,Feature Bagging"
+Per capita SARS-CoV-2 load (N1 copies per day per population),11200.0,1,"Outlier-ECOD,Feature Bagging"
