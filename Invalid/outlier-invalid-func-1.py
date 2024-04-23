@@ -111,7 +111,7 @@ def train_models(X_train, y_train,
         write_invalid_csv(invalid_csv_path, x_col, outliers_dict, outlier_cnt)
 
     plt.tight_layout()
-    # plt.show()
+    plt.show()
 
 
 
