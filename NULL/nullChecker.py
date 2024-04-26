@@ -52,7 +52,6 @@ def replace_missing_values(df, missing_values_df):
                 print(f"Warning: Cannot convert {value_to_replace} to {df[column_name].dtype} for column {column_name}")
                 continue
         
-        # 替换值
         df[column_name] = df[column_name].replace(value_to_replace, np.nan)
     
     return df
@@ -86,7 +85,6 @@ def nullChecker(path):
     final_null  = pd.concat([fahes_DMV, regular_null], ignore_index=True).drop_duplicates(keep='first')
     print( regular_null )
     output_df = replace_missing_values(df,final_null)
-
     return df, final_null
 
 
