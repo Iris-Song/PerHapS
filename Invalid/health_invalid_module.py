@@ -13,13 +13,12 @@ def find_invalid_country(df):
     not_found_row_num = 0
     not_found_country = collections.Counter()
     for i, country in enumerate(country_col):
-        if country != 'UNKNOWN OR NOT STATED':
+        if country and country != 'UNKNOWN OR NOT STATED':
             try:
                 pycountry.countries.lookup(country)
             except:
                 not_found_country[country] += 1
                 not_found_row_num += 1
-                df.at[i, 'MADE_IN_COUNTRY'] = None
     print('Number of rows with unknown country:', not_found_row_num)
     print('Unknown countries:', not_found_country)
     return not_found_country
@@ -34,7 +33,7 @@ def find_invalid_date(df):
     invalid_date_num = 0
     invalid_date = collections.Counter()
     for i, date in enumerate(collection_date_col):
-        if not re.match(datetime_pattern, date):
+        if date and not re.match(datetime_pattern, date):
             invalid_date[date] += 1
             invalid_date_num += 1
             df.at[i, 'COLLECTION_DATE'] = None
@@ -65,9 +64,9 @@ def find_invalid_date(df):
 # input_path: path to the dataset
 # is_write_invalid_csv: write invalid data to csv or not
 # return: dataframe of valid data
-def health_invalid(input_path):
-    # Read the CSV file into a DataFrame
-    df = pd.read_csv(input_path)
+def health_invalid(input_df, replace_symbol=None):
+    # Read the df from input_df
+    df = input_df
 
     # Find invalid country
     not_found_country = find_invalid_country(df)
@@ -88,24 +87,24 @@ def health_invalid(input_path):
         invalid_data['value'].append(key)
         invalid_data['frequency'].append(val)
         invalid_data['category'].append('Invalid')
+        df['MADE_IN_COUNTRY'] = df['MADE_IN_COUNTRY'].replace(key, replace_symbol)
     
     for key, val in invalid_date.items():
         invalid_data['column_name'].append('COLLECTION_DATE')
         invalid_data['value'].append(key)
         invalid_data['frequency'].append(val)
         invalid_data['category'].append('Invalid')
+        df['COLLECTION_DATE'] = df['COLLECTION_DATE'].replace(key, replace_symbol)
 
     for key, val in invalid_concentration.items():
         invalid_data['column_name'].append('CONCENTRATION')
         invalid_data['value'].append(key)
         invalid_data['frequency'].append(val)
         invalid_data['category'].append('Invalid')
+        df['CONCENTRATION'] = df['CONCENTRATION'].replace(key, replace_symbol)
     
     invalid_df = pd.DataFrame(data=invalid_data)
 
     # print('Invalid data:', invalid_df)
     return df, invalid_df
 
-if __name__ == "__main__":
-    health_invalid('../dataset/Metal_Content_of_Consumer_Products_Tested_by_the_NYC_Health_Department_20240403.csv',
-               )
