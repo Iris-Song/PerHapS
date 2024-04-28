@@ -33,10 +33,10 @@ def find_regular_nulls_in_csv(df):
 
 def append_null_stats(null_stats, column, null_type, count):
     null_stats.append({
-        "Column Name": column,
-        "Value": null_type,
-        "Frequency": count,
-        "Category": "NULL Value"
+        "column_name": column,
+        "value": null_type,
+        "frequency": count,
+        "category": "NULL Value"
     })
 
 
