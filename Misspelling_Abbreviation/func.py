@@ -3,8 +3,8 @@ import pandas as pd
 import os
 import re
 from collections import Counter
-# data_path = '../dataset/Metal_Content_of_Consumer_Products_Tested_by_the_NYC_Health_Department_20240403.csv'
-# df = pd.read_csv(data_path)
+#data_path = '../dataset/Metal_Content_of_Consumer_Products_Tested_by_the_NYC_Health_Department_20240403.csv'
+#df = pd.read_csv(data_path)
 def missspell(df):
     def read_glove_vecs(glove_file):
         with open(glove_file,'r') as f:
@@ -59,19 +59,20 @@ def missspell(df):
     for index, line in df['MANUFACTURER'].items():
         row_corrections = find_corrections(words(line))
         corrections += row_corrections
-        corrections_summary += [(original, corrected) for original, corrected in row_corrections if original != corrected]
+        corrections_summary += row_corrections
 
         if row_corrections:
             df.at[index, 'MANUFACTURER'] = 'Misspell'
         else:
             df.at[index, 'MANUFACTURER'] = 'valid'
     corrections_df = pd.DataFrame(corrections_summary, columns=['Original', 'Corrected'])
-    summary_df = corrections_df.groupby(['Corrected']).agg(Frequency=('Corrected', 'size')).reset_index()
-    summary_df['Category'] = summary_df['Corrected'].apply(lambda x: 'Misspell' if x in corrections_df['Original'].values else 'Valid')
+    summary_df = corrections_df.groupby('Corrected').agg(Frequency=('Corrected', 'size')).reset_index()
+    summary_df['Category'] = 'Misspell'
+
     summary_df = summary_df[['Corrected', 'Frequency', 'Category']]
     summary_df.columns = ['Value', 'Frequency', 'Category']
     return df,  summary_df 
 
-# df1, df2=missspell(df)
-# print(df1.head())
-# print(df2.head())
+#df1, df2=missspell(df)
+#print(df1.head())
+#print(df2.head())
