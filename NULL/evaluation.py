@@ -14,8 +14,8 @@ print(results_tuple[1])
 # Identify null values in the DataFrame
 algorithm_results = algorithm_results_raw.isnull()
 
-#true_labels = pd.read_csv('../dataset/Labeled_Metal.csv')
-true_labels = pd.read_csv('../dataset/Labeled_SARS.csv')
+#true_labels = pd.read_csv('../dataset/Labeled_Null_Metal.csv')
+true_labels = pd.read_csv('../dataset/Labeled_Null_SARS.csv')
 
 
 TP = np.sum((algorithm_results == True) & (true_labels == True))

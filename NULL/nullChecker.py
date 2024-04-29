@@ -7,9 +7,11 @@ import numpy as np
 
 def find_regular_nulls_in_csv(df):
     null_stats = []
-    null_indicators = ['NULL', 'UNKNOWN',"N/A", "missing"]  
+    null_indicators_regex = r'\b(?:NULL|UNKNOWN|N/A|missing|NOT STATED|#+)\b|^$|^(?:-+)$'
+    
     for column in df.columns:
-        count_null = df[column].isnull().sum()
+        null_mask = df[column].isnull()
+        count_null = null_mask.sum()
         if count_null > 0:
             if np.issubdtype(df[column].dtype, np.datetime64):
                 null_type = "NaT"
@@ -17,26 +19,26 @@ def find_regular_nulls_in_csv(df):
                 null_type = "NaN"
             else:
                 null_type = "None"
-            append_null_stats(null_stats, column, null_type, count_null)  
+            append_null_stats(null_stats, column, null_type, count_null)
         
         if df[column].dtype == 'object':
-            for indicator in null_indicators:
-                mask = df[column].str.contains(indicator, case=False, na=False)
-                unique_nulls = df[column][mask].unique() 
+            non_null_mask = ~null_mask
+            mask = df[column][non_null_mask].str.contains(null_indicators_regex, case=False, na=False, regex=True)
+            unique_nulls = df[column][non_null_mask][mask].unique()
 
-                for unique_null in unique_nulls:
-                    count = (df[column] == unique_null).sum() 
-                    append_null_stats(null_stats, column, unique_null, count)
+            for unique_null in unique_nulls:
+                count = (df[column] == unique_null).sum()
+                append_null_stats(null_stats, column, unique_null, count)
 
     null_df = pd.DataFrame(null_stats)
     return null_df
 
 def append_null_stats(null_stats, column, null_type, count):
     null_stats.append({
-        "column_name": column,
-        "value": null_type,
-        "frequency": count,
-        "category": "NULL Value"
+        "Column Name": column,
+        "Value": null_type,
+        "Frequency": count,
+        "Category": "NULL Value"
     })
 
 
