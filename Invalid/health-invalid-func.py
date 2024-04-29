@@ -4,7 +4,7 @@ import pycountry
 import re
 import collections
 import csv
-
+import numpy as np
 
 # find invalid country and replace it with None
 def find_invalid_country(df):
@@ -13,7 +13,7 @@ def find_invalid_country(df):
     not_found_row_num = 0
     not_found_country = collections.Counter()
     for i, country in enumerate(country_col):
-        if country != 'UNKNOWN OR NOT STATED':
+        if country and country!= np.nan and country != 'UNKNOWN OR NOT STATED':
             try:
                 pycountry.countries.lookup(country)
             except:
