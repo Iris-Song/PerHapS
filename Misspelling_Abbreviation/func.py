@@ -3,8 +3,8 @@ import pandas as pd
 import os
 import re
 from collections import Counter
-data_path = '../dataset/Metal_Content_of_Consumer_Products_Tested_by_the_NYC_Health_Department_20240403.csv'
-df = pd.read_csv(data_path)
+# data_path = '../dataset/Metal_Content_of_Consumer_Products_Tested_by_the_NYC_Health_Department_20240403.csv'
+# df = pd.read_csv(data_path)
 def missspell(df):
     def read_glove_vecs(glove_file):
         with open(glove_file,'r') as f:
@@ -68,6 +68,6 @@ def missspell(df):
     summary_df.columns = ['Value', 'Frequency', 'Category']
     return df,  summary_df 
 
-df1, df2=missspell(df)
-print(df1.head())
-print(df2.head())
+# df1, df2=missspell(df)
+# print(df1.head())
+# print(df2.head())

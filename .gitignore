@@ -3,3 +3,4 @@ dataset/glove.6B.50d.txt
 __pycache__
 dataset/Labeled_Metal.csv
 dataset/Labeled_SARS.csv
+*.o
