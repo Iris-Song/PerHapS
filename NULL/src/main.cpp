@@ -89,7 +89,7 @@ char* GenerateCSV(const std::string& tab_name, const std::vector<sus_disguised>&
     std::stringstream csv_stream;
 
     // CSV header
-    csv_stream << "Column Name,Value,Frequency,Category\n";
+    csv_stream << "column_name,value,frequency,category\n";
 
     // CSV rows
     for (size_t i = 0; i < sus_dis_values.size(); i++) {

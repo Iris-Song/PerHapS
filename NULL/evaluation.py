@@ -1,9 +1,8 @@
 import pandas as pd
 import numpy as np
 
-from nullChecker import nullChecker  # Ensure this function is correctly imported
+from nullChecker import nullChecker  #
 
-# Obtain the tuple from the function, assuming the DataFrame is its first item
 #results_tuple = nullChecker('../dataset/Metal_Content_of_Consumer_Products_Tested_by_the_NYC_Health_Department_20240403.csv')
 results_tuple = nullChecker('../dataset/SARS-CoV-2_concentrations_measured_in_NYC_Wastewater_20240403.csv')
 algorithm_results_raw = results_tuple[0]
@@ -11,7 +10,6 @@ algorithm_results_raw = results_tuple[0]
 null_counts_per_column = algorithm_results_raw.isnull().sum()
 print(null_counts_per_column)
 print(results_tuple[1])
-# Identify null values in the DataFrame
 algorithm_results = algorithm_results_raw.isnull()
 
 #true_labels = pd.read_csv('../dataset/Labeled_Null_Metal.csv')

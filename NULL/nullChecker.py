@@ -35,17 +35,17 @@ def find_regular_nulls_in_csv(df):
 
 def append_null_stats(null_stats, column, null_type, count):
     null_stats.append({
-        "Column Name": column,
-        "Value": null_type,
-        "Frequency": count,
-        "Category": "NULL Value"
+        "column_name": column,
+        "value": null_type,
+        "frequency": count,
+        "category": "NULL Value"
     })
 
 
 def replace_missing_values(df, missing_values_df):
     for index, row in missing_values_df.iterrows():
-        column_name = row['Column Name']
-        value_to_replace = row['Value']
+        column_name = row['column_name']
+        value_to_replace = row['value']
         
         if pd.api.types.is_numeric_dtype(df[column_name].dtype):
             try:
@@ -88,6 +88,5 @@ def nullChecker(path):
     output_df = replace_missing_values(df,final_null)
     
     return output_df, final_null
-
 
 

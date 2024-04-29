@@ -20,9 +20,13 @@ def missspell(df):
                 i=i+1
         del words
         return words_to_index
-    WORDS=read_glove_vecs('../dataset/glove.6B.50d.txt')
+    glovefile = os.path.join(os.path.dirname(__file__),"glove.6B.50d.txt")
+    WORDS=read_glove_vecs(glovefile)
     def words(text):
-        return re.findall(r'\w+', text.lower())
+        if isinstance(text, str):
+           return re.findall(r'\w+', text.lower())
+        else:
+           return []
     def P(word):
         return -WORDS.get(word,0)
     def correction(word):
