@@ -70,7 +70,8 @@ def missspell(df):
     summary_df['Category'] = 'Misspell'
 
     summary_df = summary_df[['Corrected', 'Frequency', 'Category']]
-    summary_df.columns = ['Value', 'Frequency', 'Category']
+    summary_df.columns = ['value', 'frequency', 'category']
+    summary_df['column_name'] = 'MANUFACTURER'
     return df,  summary_df 
 
 #df1, df2=missspell(df)
